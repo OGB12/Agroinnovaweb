@@ -912,25 +912,7 @@
                 </div>
             </div>
     </div>
-	<script  src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-        <script>
-
-             jQuery(document).ready(()=>{
-                 $.ajax({type:"GET",url:"http://us-central1-akokomarket-d5e1f.cloudfunctions.net/akokomarketStats",crossDomain:true,mode:"cors",success:(data,status)=>{
-                     console.log(data, status)
-                 }
-                 
-                 
-                });
-                
-
-
-
-
-
-            })
-        </script>
+	
 
 	<style>
         .row{
@@ -2088,8 +2070,28 @@
 
       
 	  })
+
+      </script>
+	  
+		<script  src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       
-		</script>
+	  <script>
+
+		   jQuery(document).ready(()=>{
+			   $.ajax({type:"GET",url:"http://us-central1-akokomarket-d5e1f.cloudfunctions.net/akokomarketStats",crossDomain:true,mode:"cors",success:(data,status)=>{
+				   console.log(data, status)
+			   }
+			   
+			   
+			  });
+			  
+
+
+
+
+
+		  })
+	  </script>
 	</body>
 </html>
 
